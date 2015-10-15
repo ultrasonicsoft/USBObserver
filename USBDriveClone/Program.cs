@@ -12,6 +12,7 @@ namespace USBDriveClone
         {
             var usbCloneManager = new USBDriveCloneManager();
             var destinationDir = @"c:\temp\usb-data";
+            Console.WriteLine("Watching for USB drive...");
             usbCloneManager.StartUSBCloneEngine(destinationDir);
             Console.ReadLine();
 
